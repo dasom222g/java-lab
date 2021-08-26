@@ -1,4 +1,4 @@
-package coperation;
+package cooperation;
 
 public class Bus {
 	private int busNumber;

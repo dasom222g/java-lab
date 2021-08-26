@@ -1,4 +1,4 @@
-package coperation;
+package cooperation;
 
 public class Student {
 	private String name;
