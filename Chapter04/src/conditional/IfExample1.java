@@ -19,7 +19,7 @@ public class IfExample1 {
 		else if(age < 20) charge = 2000;
 		else charge = 3000;
 		System.out.println("나이: " + age + " 요금: " + charge);
-		
+//		
 		scanner.close();
 	}
 
