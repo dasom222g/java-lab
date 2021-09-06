@@ -1,6 +1,6 @@
 package interfaceExample.sort;
 
-public class HeaSort implements Sort {
+public class HeapSort implements Sort {
 
 	@Override
 	public void ascending(int[] numberArray) {

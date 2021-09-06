@@ -5,9 +5,6 @@ import java.io.IOException;
 public class SortTest {
 
 	public static void main(String[] args) throws IOException {
-//		Sort quickSort = new QuickSort();
-//		Sort heaSort = new HeaSort();
-//		Sort bubbleSort = new BubbleSort();
 		Sort sort;
 		int[] numbers = {1,2,3};
 		
@@ -21,7 +18,7 @@ public class SortTest {
 		if(input == 'B' || input == 'b') {
 			sort = new BubbleSort();
 		} else if(input == 'H' || input == 'h') {
-			sort = new HeaSort();
+			sort = new HeapSort();
 		} else if(input == 'Q' || input == 'q') {
 			sort = new QuickSort();
 		} else {
