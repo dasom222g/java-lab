@@ -15,13 +15,15 @@ public class ObjectShallowCopyTest {
 		
 		System.arraycopy(library, 0, copyLibrary, 0, library.length);
 		
-		copyLibrary[0].setTitle("나목");
-		copyLibrary[0].setAuthor("박완서");
+		System.out.println(library[0] + "///" + copyLibrary[0]);
+		
+//		copyLibrary[0].setTitle("나목");
+//		copyLibrary[0].setAuthor("박완서");
 		
 		// library 길이만큼 돌고 각 배열의 값을 item에 넣음
-		for(Book book : library) {
-			book.showBook();
-		}
+//		for(Book book : library) {
+//			book.showBook();
+//		}
 	}
 
 }
