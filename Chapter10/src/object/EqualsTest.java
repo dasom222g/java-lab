@@ -25,7 +25,6 @@ class Student {
 		return this.studentNum;
 	}
 	
-	
 }
 
 public class EqualsTest {
@@ -38,15 +37,6 @@ public class EqualsTest {
 		System.out.println(lee.equals(sang));
 		System.out.println("lee의 해시코드 " + lee.hashCode() + " sang의 해시코드 " + sang.hashCode());
 		System.out.println("lee의 리얼 해시코드 " + System.identityHashCode(lee) + " sang의 리얼 해시코드 " + System.identityHashCode(sang));
-		
-		System.out.println("============");
-		
-		String str1 = "aaa1";
-		String str2 = "aaa2";
-		System.out.println(str1.hashCode());
-		System.out.println(str2.hashCode());
-		System.out.println(System.identityHashCode(str1));
-		System.out.println(System.identityHashCode(str2));
 	}
 
 }
