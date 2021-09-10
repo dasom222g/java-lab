@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class BookShelf extends Shelf implements Queue {
 
 	@Override
-	public void inQueue(String bookName) {
+	public void enQueue(String bookName) {
 		super.bookList.add(bookName);
 	}
 

@@ -10,7 +10,7 @@ public class BookShelfTest {
 		String[] books = {"설득의 심리학", "반지의 제왕", "Men's helth", "트와일라잇", "개미"};
 		
 		for(int i = 0; i < books.length; i++) {
-			bookQueue.inQueue(books[i]);
+			bookQueue.enQueue(books[i]);
 		}
 		
 		ArrayList<String> bookNames = bookQueue.getBooks();
@@ -20,7 +20,7 @@ public class BookShelfTest {
 		System.out.println();
 		
 		for (String book : bookNames) {
-			System.out.print("남은책은 " + book + " 입니다");
+			System.out.println("남은책은 " + book + " 입니다.");
 		}
 	
 	}
