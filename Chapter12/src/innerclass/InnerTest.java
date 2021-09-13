@@ -1,6 +1,5 @@
 package innerclass;
 
-import innerclass.OutClass.InStaticClass;
 
 class OutClass {
 	private int num = 10;
@@ -59,7 +58,7 @@ public class InnerTest {
 		// 내부 정적 클래스 접근
 		OutClass.InStaticClass inStaticClass = new OutClass.InStaticClass();
 		inStaticClass.inTest(); // 멤버메소드 호출
-		InStaticClass.sTest(); // static메소드 호출을 하므로 클래스이름으로 접근
+		OutClass.InStaticClass.sTest(); // static메소드 호출을 하므로 클래스이름으로 접근
 	}
 
 }
