@@ -1,4 +1,4 @@
-package exeption.throwsex;
+package exception.throwsex;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

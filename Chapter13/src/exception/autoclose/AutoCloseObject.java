@@ -1,4 +1,4 @@
-package exeption.autoclose;
+package exception.autoclose;
 
 public class AutoCloseObject implements AutoCloseable {
 

@@ -1,4 +1,4 @@
-package exeption.custom;
+package exception.custom;
 
 public class IDFormat {
 	private String userId;
