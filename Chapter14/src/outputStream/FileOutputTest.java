@@ -11,6 +11,8 @@ public class FileOutputTest {
 			for(char text: writeArr) {
 				file.write(text);
 			}
+			file.write('1'); // valid
+			file.write(1);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
