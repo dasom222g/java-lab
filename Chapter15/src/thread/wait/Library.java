@@ -11,11 +11,16 @@ public class Library {
 		bookList.add("ÅÂ¹é»ê¸Æ 3");
 	}
 	
-	public String rentalBook() {
+	public String rentalBook() throws InterruptedException {
 		synchronized (this) {
 			Thread currentThread = Thread.currentThread();
+			while(bookList.size() == 0) {
+				System.out.println(currentThread.getName() + " wating start");
+				wait();
+				System.out.println(currentThread.getName() + " wating end");
+			}
 			String title = bookList.remove(0);
-			System.out.println(currentThread.getName() + ": " + title + "rental");
+			System.out.println(currentThread.getName() + ": " + title + " rental");
 			return title;
 		}
 	}
@@ -24,7 +29,8 @@ public class Library {
 		synchronized (this) {
 			Thread currentThread = Thread.currentThread();
 			bookList.add(bookName);
-			System.out.println(currentThread.getName() + ": " + bookName + "return");
+			notifyAll();
+			System.out.println(currentThread.getName() + ": " + bookName + " return");
 		}
 	}
 }
